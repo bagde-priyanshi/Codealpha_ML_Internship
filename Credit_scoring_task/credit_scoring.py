@@ -8,7 +8,10 @@ from sklearn.metrics import classification_report, roc_auc_score
 # ── 1. Load Data ──────────────────────────────────────────────────────────────
 print("Step 1: Loading data...")
 df = pd.read_csv('cs-training.csv')
-print(f"Done! Shape: {df.shape}")
+print("\nPreview the dataset")
+print(f"Shape: {df.shape}")
+print(df.head())
+print(df.info())
 
 # ── 2. Clean Data ─────────────────────────────────────────────────────────────
 print("\nStep 2: Cleaning data...")
